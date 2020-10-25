@@ -14,5 +14,14 @@ Clar, si no tenim un hardware mínim, el nostre sistema operatiu no tirarà, cla
 
 Com que estem instal·lant Windows 10, sistema propietari, cal adquirir algun tipus de llicència d'ús.
 
+Windows 10 disposa habitualment de diferents tipus de llicència:
+
+| Tipus | Característiques |
+| :--- | :--- |
+| OEM | Llicència per màquina |
+| RETAIL | Llicència per usuari, associada a l'usuari, aquest pot associar-la a equips diferents però sempre l'última és vàlida |
+| KMS | D'organització, requereix un servidor amb VA Services o llicències per volum |
+| MAK | Clau d'accès múltiple, s'activa a través d'internet, una única clau activa moltes màquines. |
+
 
 
