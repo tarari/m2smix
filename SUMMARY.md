@@ -1,8 +1,11 @@
 # Table of contents
 
 * [Introducció](README.md)
-* [Màquines virtuals](maquines-virtuals.md)
-* [Creació de les màquines virtuals](creacio-de-les-maquines-virtuals.md)
+
+## UF1 INTRODUCCIÓ ALS SISTEMES OPERATIUS
+
+* [Creació de les màquines virtuals](uf1-introduccio-als-sistemes-operatius/creacio-de-les-maquines-virtuals.md)
+* [Màquines virtuals](uf1-introduccio-als-sistemes-operatius/maquines-virtuals.md)
 
 ## UF2 Sistemes operatius propietaris
 
