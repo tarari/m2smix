@@ -60,7 +60,7 @@ En un nou pas l'assistent ens pregunta on volem instal·lar Windows 10.
 >
 > Tots els arxius s'eliminaran
 
-En qualsevol dels  casos, **després de prémer  següent començarà la instal·lació de Windows 10 en el nostre equip** . A partir d'ara no necessitem tocar res més, l'equip es reiniciarà **dues vegades** i apareixerà l'assistent de configuració de Windows.
+En qualsevol dels  casos, **després de prémer**  _**següent**_ **començarà la instal·lació de Windows 10 en el nostre equip** . A partir d'ara no necessitem tocar res més, l'equip es reiniciarà **dues vegades** i apareixerà l'assistent de configuració de Windows.
 
 
 
