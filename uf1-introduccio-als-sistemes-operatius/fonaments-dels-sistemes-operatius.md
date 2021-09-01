@@ -124,23 +124,28 @@ de direcció se selecciona de forma única la cel·la sobre la qual es vol reali
 
 ### **3.1 Definició de sistema operatiu** 
 
-Per a definir què és un sistema operatiu, cal tenir presents dos aspectes relacionats amb l’ordinador: el maquinari i el programari. L’ordinador és format per dos elements fonamentals: l’element físic o maquinari i l’element lògic o programari. Actualment, un ordinador és una màquina molt complexa que pot constar d’un o més processadors, discos, escàners, targetes de comunicacions, impressores, mòdems, etc. Els dispositius que conté són de tipus divers \(òptics, magnètics, etc.\), tenen un funcionament molt variat \(alguns comparteixen el mateix dispositiu\), la tecnologia de funcionament és diferent i el tipus de suport utilitzat té característiques diferents. Així, si un usuari vol fer servir aquest sistema d’una manera eficient, necessita conèixer les característiques, controlar-ne el funcionament, etc. Per tant, cal pensar que hi ha d’haver una solució que permeti als usuaris utilitzar aquesta màquina d’una manera més senzilla, fàcil i eficient.   
+Per a definir què és un sistema operatiu, cal tenir presents dos aspectes relacionats amb l’ordinador: **el maquinari i el programari**. 
+
+L’ordinador és format per dos elements fonamentals: l’element físic o maquinari i l’element lògic o programari. Actualment, un ordinador és una màquina molt complexa que pot constar d’un o més processadors, discos, escàners, targetes de comunicacions, impressores, mòdems, etc. Els dispositius que conté són de tipus divers \(òptics, magnètics, etc.\), tenen un funcionament molt variat \(alguns comparteixen el mateix dispositiu\), la tecnologia de funcionament és diferent i el tipus de suport utilitzat té característiques diferents. Així, si un usuari vol fer servir aquest sistema d’una manera eficient, necessita conèixer les característiques, controlar-ne el funcionament, etc. Per tant, cal pensar que hi ha d’haver una solució que permeti als usuaris utilitzar aquesta màquina d’una manera més senzilla, fàcil i eficient.   
 ****
 
-Els sistemes operatius constitueixen el programari base per excel·lència dels sistemes informàtics. Ellsformen el gruix de la capa de programari base del sistema.   
+Els sistemes operatius constitueixen el programari base per excel·lència dels sistemes informàtics. Ells formen el gruix de la capa de programari base del sistema.   
 ****
 
-Tenen dues funcions bàsiques:   
-
+{% hint style="info" %}
+Els **sistemes operatius**  tenen dues funcions bàsiques: 
 
 • Gestionar els recursos de maquinari del sistema. 
 
-•Oferir una interfície a l’usuari i a les aplicacions per poder utilitzar el sistema i els seus recursos.   
-****
+•Oferir una interfície a l’usuari i a les aplicacions per poder utilitzar el sistema i els seus recursos.
+{% endhint %}
 
-De vegades, es diu que els sistemes operatius ofereixen a l’usuari una màquina virtual o màquina estesa, més simple que les màquines físiques: creen una abstracció de totes les característiques diferenciadores dels diversos components de maquinari dels diferents fabricants, i els fan accessibles sense que l’usuari s’hagi de preocupar de les característiques concretes del component. Entre els recursos que els sistemes operatius actuals han de gestionar, destaquen els següents: 
+De vegades, es diu que els sistemes operatius ofereixen a l’usuari una màquina virtual o màquina estesa, més simple que les màquines físiques: creen una abstracció de totes les característiques diferenciadores dels diversos components de maquinari dels diferents fabricants, i els fan accessibles sense que l’usuari s’hagi de preocupar de les característiques concretes del component. 
 
-**•** El processador 
+{% hint style="info" %}
+Entre els recursos que els sistemes operatius actuals han de gestionar, destaquen els següents: 
+
+**•**El processador 
 
 • La memòria 
 
@@ -152,11 +157,10 @@ De vegades, es diu que els sistemes operatius ofereixen a l’usuari una màquin
 
 • La seguretat del sistema  
   
-  
-  
-  
-  
 ****
+{% endhint %}
+
+
 
 ### **3.2. Funcions dels sistemes operatius**  
 
