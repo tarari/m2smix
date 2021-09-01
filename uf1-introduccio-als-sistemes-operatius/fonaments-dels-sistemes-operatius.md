@@ -209,35 +209,37 @@ Més endavant veurem alguns del algorismes que un SO utilitza per a gestionar to
 
 #### **3.3.2 Administració de memòria** 
 
-**La memòria principal \(RAM\) es clau en el rendiment d'un equip. ja que qualsevol instrucció o dada que formi part d'un procés ha d'allotjar-se en ella per a poder ser accedida per la CPU. La capacitat de la memòria RAM es limitada. Per aquesta raò, el sistema operatiu ha de gestionar-ne l'espai. A banda de la memòria principal, el disc dur -d’accés més lent- pot emmagatzemar temporalment també alguna d'aquestes dades \(memòria virtual\).**  
+La memòria principal \(RAM\) es clau en el rendiment d'un equip. ja que qualsevol instrucció o dada que formi part d'un procés ha d'allotjar-se en ella per a poder ser accedida per la CPU. La capacitat de la memòria RAM es limitada. Per aquesta raò, el sistema operatiu ha de gestionar-ne l'espai. 
+
+A banda de la memòria principal, el disc dur \(d’accés més lent\) pot emmagatzemar temporalment també alguna d'aquestes dades \(memòria virtual\).  
 
 
 #### **3.3.3 Administració de fitxers** 
 
-**Els ordinadors utilitzen dispositius hardware per a emmagatzemar informació \(discs durs, pendrives, targetes de memòria...\). Com a usuaris ens veiem obligats a comunicar-nos amb la màquina. El sistema operatiu facilita la traducció entre el "llenguatge humà" i el "llenguatge de la màquina". Per exemple, en comptes de referenciar a les pistes i sectors d'un disc dur on hi ha emmagatzemada una cançó, treballem sobre una abstracció anomenada fitxer MP3, que existeix únicament a nivell lògic dins del sistema operatiu. Així, doncs, un fitxer pot definir-se com una abstracció del hardware. El sistema operatiu mapeja un fitxer al dispositiu d'emmagatzematge i organitza a nivell lògic el conjunt d'arxius que contenen la informació de l'usuari per a poder-la visualitzar, editar, recuperar, copiar, gravar i esborrar, el que s'anomena sistema de fitxers. Es tracta un component tant important que cada sistema implementa el seu. Tal i com passava amb la gestió de la memòria, el sistema operatiu ha de gestionar l'espai lliure, com s'assigna cada fitxer i quan s'allibera, amés de garantir l'accés segur a la informació.**  
+Els ordinadors utilitzen dispositius hardware per a emmagatzemar informació \(discs durs, pendrives, targetes de memòria...\). Com a usuaris ens veiem obligats a comunicar-nos amb la màquina. El sistema operatiu facilita la traducció entre el "llenguatge humà" i el "llenguatge de la màquina". Per exemple, en comptes de referenciar a les pistes i sectors d'un disc dur on hi ha emmagatzemada una cançó, treballem sobre una abstracció anomenada fitxer MP3, que existeix únicament a nivell lògic dins del sistema operatiu. Així, doncs, un fitxer pot definir-se com una abstracció del hardware. El sistema operatiu mapeja un fitxer al dispositiu d'emmagatzematge i organitza a nivell lògic el conjunt d'arxius que contenen la informació de l'usuari per a poder-la visualitzar, editar, recuperar, copiar, gravar i esborrar, el que s'anomena sistema de fitxers. Es tracta un component tant important que cada sistema implementa el seu. Tal i com passava amb la gestió de la memòria, el sistema operatiu ha de gestionar l'espai lliure, com s'assigna cada fitxer i quan s'allibera, amés de garantir l'accés segur a la informació.  
   
-
+****
 
 #### **3.3.4 Administració de l’Entrada i Sortida** 
 
-**El sistema operatiu també ha d'administrar els diferents components de hardware i perifèrics. Els anomenats drivers o controladors de dispositiu són petits programes que permeten la comunicació amb l'equip.**  
-
+El sistema operatiu també ha d'administrar els diferents components de hardware i perifèrics. Els anomenats drivers o controladors de dispositiu són petits programes que permeten la comunicació amb l'equip.  
+****
 
 #### **3.3.5 Administració de la xarxa** 
 
-**Molts dels recursos que utilitzem en els nostres equips, no estan en ells, sinó que estan en la Internet o en una altra màquina a la que pertany l'equip. El sistema operatiu abstrau a l'usuari la complexitat d'aquesta connectivitat.**  
-
+Molts dels recursos que utilitzem en els nostres equips, no estan en ells, sinó que estan en la Internet o en una altra màquina a la que pertany l'equip. El sistema operatiu abstrau a l'usuari la complexitat d'aquesta connectivitat.  
+****
 
 #### **3.3.6 Seguretat / Protecció** 
 
-**La protecció son els procediments que s'utilitzen per a controlar l’accés dels processos \(i dels usuaris\) als recursos que administra el sistema operatiu.**  
+La protecció son els procediments que s'utilitzen per a controlar l’accés dels processos \(i dels usuaris\) als recursos que administra el sistema operatiu.  
   
   
-
+****
 
 #### **3.3.7 Intèrpret de comandes / Interfície gràfica** 
 
-**La interfície entre l'equip i els usuaris sol ser de dues naturaleses diferents: Intèrpret de comandes o Interfície gràfica.**  
+La interfície entre l'equip i els usuaris sol ser de dues naturaleses diferents: Intèrpret de comandes o Interfície gràfica.  
   
-
+****
 
