@@ -16,4 +16,5 @@
 
 * [Instal·lació](uf3-sistemes-operatius-lliures/untitled.md)
 * [Configuració](uf3-sistemes-operatius-lliures/configuracio.md)
+* [Administració](uf3-sistemes-operatius-lliures/administracio.md)
 
