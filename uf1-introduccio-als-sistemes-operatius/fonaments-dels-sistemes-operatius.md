@@ -570,3 +570,281 @@ A les últimes dècades, les millores en el maquinari i l’abaratiment dels cos
 Google, la companyia al darrere del sistema operatiu Android, també ha dissenyat un sistema operatiu de propòsit general anomenat **ChromeOS** que s’executa en equips portàtils o de sobretaula. Avui dia, tant un dispositiu amb Android com un amb ChromeOS executen les mateixes aplicacions de forma indistinta. Igual passa amb Apple Inc. que amb el projecte **Marzipan** pretén que les aplicacions programades per iOS puguin executar-se en macOS i a l’inrevés. La tendència en tots dos casos és la convergència dels diferents sistemes en un únic entorn on es podran executar les aplicacions independentment de si es tracta d’un dispositiu mòbil o un equip de sobretaula.  
 
 
+
+
+### Funcions del sistema operatiu
+
+El sistema operatiu és l’encarregat de gestionar els recursos de l’equip per optimitzar el seu funcionament i permetre l’execució d’altres aplicacions. Aquesta gestió es pot dividir en els següents blocs:
+
+* **Ajuda a l’usuari**. El sistema operatiu facilita l’ús del sistema informàtic a l’usuari proporcionant-li un entorn de fàcil utilització per incrementar la seva productivitat i facilitar-li el diàleg amb el maquinari.
+* **Gestió de processos**. El sistema operatiu permet que els programes puguin executar-se i interactuar amb la part del maquinari del sistema informàtic. És l’encarregat de gestionar l’estat dels processos i planificar els treballs del processador per obtenir el rendiment més gran possible.
+* **Gestió de dispositius d’entrada/sortida**. El sistema operatiu ha de poder enviar i rebre ordres dels dispositius perifèrics.
+* **Gestió del sistema d’arxius**. El sistema ha de permetre les operacions de gestió d’arxius i directoris, com la creació, eliminació o modificació d’arxius i directoris entre altres.
+* **Gestió de la memòria**. El sistema operatiu ha de gestionar la memòria del sistema informàtic assignant-la als diferents programes que executa per obtenir el millor rendiment possible.
+* **Protecció del sistema**. El sistema operatiu ha de garantir la seguretat de la informació dels usuaris i evitar intromissions d’altres usuaris de forma voluntària o no intencionada.
+* **Monitoratge interna**. El sistema ha de monitorar totes les operacions que realitza per detectar els errors que es puguin donar en dispositius d’entrada/sortida, memòria, execucions de programes o sistema d’arxius. Davant d’aquests errors, el sistema ha de donar l’avís corresponent a l’usuari i mantenir-se en funcionament.
+
+En resum, podem dir que els sistemes operatius tenen **tres funcions bàsiques** que són ajudar a l’usuari, monitorar i protegir el sistema i gestionar els recursos del sistema informàtic.
+
+Els recursos d’un sistema informàtic són els components físics que formen part d’aquest, com el processador, la memòria i els dispositius d’entrada/sortida. El sistema operatiu s’encarrega d’assignar aquests recursos als diferents programes que els sol·liciten i moltes vegades ho fan inclús de forma simultània.
+
+Els sistemes operatius disposen de diferents mecanismes per controlar l’assignació de recursos i resoldre els conflictes que es produeixen. També porta l’administració de la càrrega que assumeixen els diferents recursos, cosa que li permet gestionar les necessitats de l’usuari.
+
+#### Gestió d'arxius
+
+Dins d’un sistema informàtic, la informació s’emmagatzema als dispositius d’emmagatzematge en blocs de forma que els processos que executa el sistema poden fer dues operacions: llegir el bloc o escriure el bloc. Aquesta informació, habitualment, s’estructura de forma lògica utilitzant arxius i directoris. Els arxius i directoris són una abstracció que permet als processos i als usuaris treballar amb les dades que contenen aquests blocs d’una forma molt més simple.
+
+La mida més habitual d’un bloc d’un disc dur és de 512 bytes. Als discos durs aquests blocs s’anomenen sectors i és la mida mínima que un disc dur pot llegir i escriure.
+
+Un **arxiu** és un conjunt lògic de dades amb les quals treballen els processos.
+
+Els arxius es poden crear, llegir, eliminar, reubicar, comprimir, executar, etc. Existeixen arxius de diferents tipus, segons el contingut de la informació que emmagatzemen, des d’arxius de programes fins arxius de dades comunes. El sistema també permet protegir les operacions que es poden fer amb els arxius utilitzant una sèrie de permisos.
+
+Cada sistema operatiu utilitza el seu propi **sistema d’arxius**. El sistema d’arxius permet que la informació es pugui organitzar de forma lògica per permetre una gestió ràpida i senzilla.
+
+El **sistema d’arxius** determina com s’emmagatzema la informació en un dispositiu d’emmagatzematge i quines operacions es poden fer amb ella.
+
+Per **gestionar el sistema d’arxius** d’un sistema informàtic, el sistema operatiu ha de dur a terme les següents funcions:
+
+* La gestió dels directoris i arxius i de les seves rutes d’accés
+* La gestió de les operacions i permisos sobre els arxius i directoris.
+* La gestió dels accessos simultanis a un mateix arxiu o directori.
+* La gestió de l’espai.
+* La gestió dels errors i el manteniment de la consistència del sistema d’arxius.
+
+**La gestió dels directoris i arxius i de les seves rutes d'accés**
+
+Els arxius i directoris s’emmagatzemen als dispositius d’emmagatzematge. El sistema operatiu a més de poder accedir al contingut de l’arxiu o directori també pot visualitzar informació relacionada amb les seves propietats, com el nom, tipus, propietari, dates de creació o modificació i mida, entre altres dades.
+
+La informació emmagatzemada és important que sigui persistent, és a dir, que pugui ser consultada en qualsevol moment, independentment de si el procés que l’ha creada ha deixat d’estar en execució. Per aconseguir-ho, l’usuari li donarà un nom a l’arxiu que passarà a estar disponible per la resta de processos amb aquest nom. Depenent del sistema operatiu, aquest nom d’arxiu tindrà des de 8 fins a 255 caràcters de longitud, poden diferenciar-se \(o no\) les majúscules de les minúscules i poden contenir o no una segona part en el nom anomenada extensió, separada de la primera pel caràcter punt \(“.”\), que identifica el tipus d’arxiu del qual es tracta.
+
+Cal considerar que un disc dur pot contenir milers o fins i tot milions d’arxius i, per tant, es fa necessari l’organització dels arxius. L’eina habitual als sistemes operatius per realitzar aquesta organització són els directoris, també coneguts com a carpetes.
+
+Un **directori** és una agrupació d’arxius o d’altres directoris que s’agrupen segons el seu contingut seguint uns criteris que resultin naturals per als usuaris.
+
+Quan s’organitza la informació d’un dispositiu d’emmagatzematge en directoris, s’aconsegueix separar els arxius dels diferents programes i agrupar els arxius amb contingut similar. Si hi ha molts arxius dins d’un directori, es poden agrupar creant subdirectoris. En realitat, directori i subdirectori són dues formes d’anomenar el mateix concepte, la diferència és que subdirectori s’utilitza per referir-se a un directori que s’ha creat dins d’un altre. Aquesta agrupació en directoris de forma jeràrquica permet una organització més òptima de la informació i és la més habitual als diferents sistemes operatius.
+
+La jerarquia dels arxius i directoris està organitzada en forma d’arbre amb molts nivells de profunditat. Per especificar cada arxiu dins de la jerarquia de directoris, es proporciona un nom de la ruta des de la part superior de la jerarquia d’arxius i directoris, anomenat directori arrel. Aquests noms de ruta absoluta consisteixen en la llista de directoris que han de seguir-se des del directori arrel per arribar a l’arxiu, i s’acostumen a utilitzar barres diagonals per separar els diferents components.
+
+Rutes absolutes
+
+* Ruta absoluta en sistemes operatius Windows on el símbol separador és `\`: `c:\windows\System32\`
+* Ruta absoluta en sistemes operatius GNU/Linux on el símbol separador és `/`: `/usr/lib`
+
+En cada moment, cada procés té un directori de treball actual, és a dir, un punt en la jerarquia d’arxius i directoris on s’està executant el procés, aquest directori s’anomena **directori de treball o directori actual**.
+
+Es pot fer referència a un arxiu o directori des del propi directori de treball sense fer servir la ruta absoluta. Per exemple, si el procés en execució està situat en `/usr` i s’escriu el nom `lib`, el nom complet resultant pel sistema operatiu és `/usr/lib`. En aquest cas, estem fent servir una ruta relativa.
+
+Una ruta pot ser **relativa**, en aquest cas s’indica el camí des del directori en el qual ens trobem fins al directori al qual volem accedir o **absoluta** on s’indica tota la ruta de l’arxiu incloent el directori arrel.
+
+Existeixen a la majoria de sistemes operatius amb estructura jeràrquica dues entrades especials a cada directori. Aquestes entrades habitualment són “.” i “..”, on “.” és equivalent al directori actual \(on està situat el procés\) i “..” fa referència al directori pare. Per exemple, si el procés està situat al directori `/usr/lib`, “.” És equivalent a `/usr/lib` mentre que “..” és equivalent a `/usr`.
+
+Al directori arrel, tant “.” com “..” fan referència al mateix directori, ja que no hi ha cap directori pare.
+
+**La gestió de les operacions i permisos sobre els arxius i directoris**
+
+El sistema d’arxius també manté, per a cada arxiu, una sèrie d’atributs. Aquests atributs contenen, entre d’altres, informació del propietari, temps de creació, darrera modificació i privilegis d’accés.
+
+Els sistemes operatius defineixen un conjunt d’operacions possibles sobre un arxiu o directori. Tradicionalment aquestes operacions són les de creació, eliminació, obertura, tancament, lectura i escriptura.
+
+El sistema operatiu ha de comprovar, per un usuari que ha iniciat correctament sessió a un sistema operatiu, si aquest usuari té els drets i permisos correctes d’accés a un arxiu o directori en cada operació que vulgui realitzar amb ell. En funció de l’usuari que executa el procés, la pertinència a grups d’aquest usuari, del propietari de l’arxiu i dels privilegis definits sobre l’arxiu, el sistema operatiu permetrà l’accés a l’arxiu o directori. Un usuari, o el procés que aquest usuari executa, només ha de poder accedir als recursos als quals té autorització, ja que això limita els possibles danys que es puguin donar en un sistema operatiu si hi ha algun error. Habitualment per cada arxiu o directori el propietari és l’encarregat de concedir els permisos a la resta d’usuaris o grups d’usuaris.
+
+**La gestió dels accessos simultanis a un mateix arxiu o directori**
+
+Els sistemes operatius actuals són multiusuari i multiprogramats, amb diversos usuaris fent servir el mateix maquinari així com diversos processos en execució al mateix temps. És per això que es fa necessari que el sistema d’arxius implementi els mecanismes necessaris per prevenir que dos processos o usuaris diferents puguin modificar un mateix arxiu a la vegada fet que podria comportar la pèrdua de la integritat de la informaciÓ. El mecanisme habitual utilitzat pels sistemes d’arxius és el bloqueig d’arxius. El bloqueig dels arxius pot ser tant pel que fa a l’arxiu complet com únicament d’algunes de les parts de l’arxiu.
+
+**La gestió de l'espai**
+
+El sistema operatiu és l’encarregat d’assignar espai als arxius i directoris als dispositius d’emmagatzematge de forma que l’accés es pugui fer de forma eficient. També és l’encarregat de gestionar l’espai lliure així com de proporcionar una gestió eficient de l’espai. Els tres mètodes més utilitzats per assignar espai als dispositius d’emmagatzematge són:
+
+* **Assignació contigua**. Els blocs de l’arxiu s’ubiquen de forma consecutiva en sectors contigus del disc. Com informació de control només cal tenir l’apuntador al primer bloc i el nombre de blocs de l’arxiu de forma que l’accés és senzill i no requereix accessos addicionals. Aquest sistema no permet amb facilitat que l’arxiu pugui créixer i produeix fragmentació del disc. De totes maneres, és un mecanisme molt adequat per dispositius de només lectura, com un DVD.
+* **Assignació encadenada**. En aquest mecanisme els blocs de l’arxiu es col·loquen als sectors lliures del disc i dins de cada bloc trobem un apuntador al següent bloc. Per accedir a l’arxiu només cal conèixer l’apuntador al primer bloc. En aquest mecanisme disminueix la fragmentació i permet que l’arxiu pugui créixer fàcilment. En contraposició, com que cada apuntador està inclòs al bloc anterior, per accedir a l’últim bloc cal llegir tots els anteriors. Un altre problema que presenta aquest mecanisme és que si hi ha un error a un dels blocs que conté un apuntador, es trenca la cadena i no resulta possible accedir als següents blocs si no s’ha previst un mecanisme com una llista doblement encadenada.
+* **Assignació indexada**. Amb la combinació dels dos mètodes anteriors, trobem la ubicació indexada. En aquest mecanisme, la informació de control s’emmagatzema en un altre lloc de forma contigua. En aquest cas pot existir fragmentació a la taula indexada, ja que el creixement o modificació d’un arxiu fa que calgui modificar la taula d’índex o reubicar-la. Aquesta taula d’índex es troba emmagatzemada al disc i es carrega a la memòria quan cal utilitzar-la.
+
+Fragmentació
+
+La fragmentació és un fenomen per descriure l’incapacitat del sistema operatiu d’emmagatzemar les dades de forma seqüencial generant una utilització de l’espai d’emmagatzematge ineficient.
+
+A més d’assignar una ubicació als diferents arxius i directoris, cal que el sistema d’arxius realitzi la gestió de l’espai lliure que està disponible per nous arxius o pel creixement dels ja existents.
+
+**La gestió dels errors i el manteniment de la consistència del sistema d'arxius**
+
+En un sistema informàtic cal que els usuaris puguin confiar que la informació disponible al sistema és correcta i consistent. Els sistemes d’arxius llegeixen blocs, els modifiquen i els escriuen. Una possible errada en el sistema abans de finalitzar l’escriptura dels blocs provocarà que el sistema d’arxius i per tant la informació quedi en un estat inconsistent. Si l’error d’escriptura es dona en un dels blocs on es guarda informació crítica del sistema d’arxius, com per exemple la llista on es guarden els blocs lliures, el problema s’agreuja.
+
+Els diferents sistemes operatius proporcionen utilitats que verifiquen la consistència del sistema d’arxius. Aquestes utilitats es basen en el disseny del sistema d’arxius per poder realitzar les recuperacions necessàries per restaurar la consistència, per tant, cada sistema d’arxius fa servir diferents utilitats per aconseguir-ho. Entre elles, una de la més habitual en els sistemes d’arxius més utilitzats en l’actualitat, està la utilització d’un registre o diari, també conegut com a _log_ en anglès.
+
+També, cal tenir en consideració que els sistemes d’arxius mantenen en tot moment una llista dels blocs de disc que són erronis, és a dir, que no es poden fer servir. D’aquesta forma s’evita que aquests blocs que poden provocar errors puguin ser utilitzats. Com a conseqüència, aquests blocs deixen d’estar disponibles i per tant, es perd aquest espai d’ús.
+
+#### Gestió de la memòria
+
+Un dels components més important d’un equip informàtic és la memòria. La memòria ha de ser ràpida, amb gran capacitat d’emmagatzematge i econòmica. Actualment, cap tecnologia compleix amb aquests tres objectius simultàniament i per això s’ha adoptat una solució on el sistema de memòria està **construït jeràrquicament per capes**. En aquesta solució les capes superiors tenen major velocitat i cost per bit, però menor capacitat que les capes inferiors, com podeu observar a la [figura.2](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a1/continguts.html#fig2).FiguraJerarquia de memòria![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_002.png)
+
+La capa superior del sistema de memòria està formada pels **registres** interns de la CPU. Estan fabricats amb el mateix material que la CPU i, per tant, tenen la mateixa velocitat. Cada registre contindrà un conjunt de bits \(4, 8, 16, 32 o 64, depenent del disseny del processador\) que es manipulen en bloc.
+
+El següent nivell de la jerarquia és la **memòria cau** que podem trobar integrada a l’interior del processador o molt a prop seu en equips més antics. Aquesta memòria emmagatzema dades que previsiblement seran utilitzades als següents càlculs, evitant així haver de recórrer a la memòria principal que és més lenta i accelerant el funcionament de l’equip.
+
+La **memòria principal** és la següent en la jerarquia del sistema de memòria. Aquesta memòria es coneix també com memòria RAM \(_Random Access Memory_\). En l’actualitat aquestes memòries poden contenir diversos gigabytes i la seva capacitat continua augmentat ràpidament en el temps. Totes les peticions de la CPU que no es poden gestionar a la memòria cau passen a la memòria principal.
+
+El següent lloc a la jerarquia correspon a la **memòria secundària** formada pels dispositius d’emmagatzematge que s’acostumen a utilitzar per emmagatzemar grans volums de dades. La capacitat d’un disc dur és molt més econòmica que la de la memòria RAM per cada bit i això permet que aquests dispositius puguin contenir moltes més dades. En contraposició trobem que l’accés a aquest tipus de dispositiu d’emmagatzematge és més lent.
+
+Aquesta jerarquia de memòria és la més comuna, però podem trobar algun sistema que no tingui totes aquestes capes o tingui alguna diferent. De totes maneres, a mesura que descendim capes en la jerarquia, el temps d’accés s’incrementa, la capacitat augmenta i el cost per bit baixa.
+
+Perquè un procés es pugui executar s’ha d’emmagatzemar a la memòria primària de l’equip informàtic. Els programes i les dades que no es necessiten de forma immediata s’acostumen a emmagatzemar a la memòria secundària fins que es necessitin i calgui transferir-los a la memòria primària.
+
+El procés de gestió de la memòria d’un sistema operatiu consisteix bàsicament a dur a terme les següents funcions:
+
+* **Execució dels processos del sistema operatiu i de les aplicacions d’usuari**. El sistema operatiu ha d’assignar la memòria necessària a les aplicacions i processos que ho sol·liciten. Un programa, durant la seva execució pot ocupar posicions de memòria consecutives o pot estar ubicat de forma no contigua.
+* **Gestió de la permanència del programa a la memòria**. El sistema operatiu s’ha d’encarregar d’alliberar la part de memòria que ja no s’utilitza perquè estigui disponible per altres aplicacions i processos. Un programa pot emmagatzemar-se i treure de la memòria durant la seva execució o pot romandre a la memòria en tot moment.
+* **Gestió del nombre de programes simultanis en memòria**. Aquesta gestió depèn de si hi ha un únic programa o més a la memòria de forma simultània. El sistema operatiu ha de controlar la presència simultània d’aquests programes.
+* **Gestió dels programes que es troben emmagatzemats entre la memòria principal i la secundària**. El sistema operatiu ha de gestionar l’execució dels programes que no es poden carregar sencers a la memòria. Un programa en execució pot trobar-se dividit entre la memòria i diferents dispositius d’emmagatzematge.
+
+Des dels primers sistemes operatius, els dissenyadors han anat introduint tècniques per poder gestionar aquests aspectes. Les més conegudes són les següents:
+
+* Monitor resident i tècnica de fer particions
+* _Swapping_
+* Paginació i segmentació
+* Enllaç dinàmic
+* Memòria virtual
+
+**Monitor resident i tècnica de fer particions**
+
+La tècnica de monitor resident permet gestionar un únic programa a la memòria, mentre que la tècnica de fer particions pot gestionar un o més programes assignant a cada programa un espai diferent, com si fos una espècie de partició. A les dues tècniques, el programa ha d’estar totalment emmagatzemat en la memòria principal i no es pot extreure durant la seva execució. Aquestes són tècniques dels primers sistemes operatius i són difícils de trobar als sistemes operatius actuals.
+
+**'Swapping'**
+
+La tècnica de l’_swapping_ permet intercanviar programes entre la memòria principal i la secundària. Amb aquesta tècnica els programes poden entrar i sortir de la memòria durant el seu temps d’execució deixant espai a altres programes. Això permet més flexibilitat durant la gestió de la memòria i permet una utilització més eficient de l’espai.
+
+Per poder utilitzar l’_swapping_ cal disposar d’espai lliure per l’intercanvi de les dades en un dispositiu d’emmagatzematge secundari, normalment s’utilitza un disc dur independent, una partició del propi disc dur que conté el sistema operatiu o un fitxer.
+
+El fet d’ubicar el programa a la memòria principal o secundària és decisió del sistema operatiu que ha de seleccionar quins programes mantindrà en un espai o en l’altre en funció de certs criteris com la necessitat d’obtenir espai lliure, la prioritat i estat dels processos o el temps que porta el programa ocupant la memòria principal.
+
+**Paginació i segmentació**
+
+La paginació i la segmentació permeten col·locar els programes de forma no contigua a la memòria. Un dels avantatges d’aquests mètodes és que el programa ja no necessita un espai lliure contigu de la seva mida, sinó que la quantitat total de memòria disponible sigui suficient per poder ubicar-lo.
+
+Per poder col·locar els programes de forma no contigua cal dividir-lo en fragments. La tècnica de paginació divideix el programa en pàgines de la mateixa mida mentre que la tècnica de segmentació divideix el programa en segments de mida variable.
+
+La tècnica de la paginació divideix el programa en fragments de la mateixa mida anomenats pàgines i a la vegada divideix l’espai de la memòria principal en fragments de la mateixa mida anomenats marcs. Quan ha d’emmagatzemar un programa a la memòria, el sistema operatiu busca quins marcs té disponibles. El sistema operatiu gestiona una taula de pàgines on cada pàgina carregada a la memòria principal es relaciona amb el marc que la conté.
+
+La segmentació és una tècnica de gestió de memòria on el programa es divideix en segments, que poden ser de diferents mides, i que es van transferint a la memòria física a mesura que es van necessitant i es tornen a dipositar a la memòria secundària quan cal alliberar la memòria principal.
+
+Les tècniques de segmentació i paginació poden combinar-se de forma que es poden crear les tècniques **segmentació paginada** on els segments es divideixen en pàgines i **paginació segmentada** on la taula de pàgines es divideix en segments. Aquestes combinacions permeten reduir els problemes de fragmentació que produeix la divisió en segments i permet dividir la taula de pàgines en segments per no manipular una taula tan gran.
+
+**Enllaç dinàmic**
+
+Una llibreria d’enllaç dinàmic és un arxiu que conté instruccions i dades que es carrega directament a la memòria quan es necessita i pot ser utilitzat per més d’un programa a la mateixa vegada. Aquestes llibreries són conegudes com a DLLs \(_Dynamic Link Libraries_\) o llibreries en temps d’execució.
+
+Quan una aplicació necessita una d’aquestes llibreries, el sistema operatiu s’encarrega de comprovar si la llibreria està emmagatzemada a la memòria, si no ho està, l’emmagatzema i ho indica al programa. Per fer aquesta gestió, el sistema operatiu utilitza una taula on guarda la informació sobre les llibreries emmagatzemades a memòria i la seva ubicació.
+
+Alguns dels **avantatges** d’aquesta tècnica són:
+
+* S’utilitzen menys recursos quan diferents programes utilitzen la mateixa llibreria, ja que aquest fet permet estalviar espai en memòria.
+* Ajuden a promoure el disseny de programes modulars, ja que part del codi es troba a les llibreries.
+* L’actualització d’una llibreria beneficia a més d’una aplicació, ja que més d’una aplicació poden utilitzar les mateixes llibreries.
+* El temps de càrrega dels programes pot ser menor si les llibreries ja estan emmagatzemades en memòria.
+
+En contraposició quan un programa utilitza una llibreria d’enllaç dinàmic crea una dependència amb la llibreria. Si hi ha qualsevol problema amb la llibreria, podria passar que el programa no s’executés.
+
+**Memòria virtual**
+
+Molts equips utilitzen aquesta tècnica de gestió de memòria anomenada memòria virtual, que fa possible l’execució de programes que són massa grans per poder emmagatzemar-se a la memòria principal a l’emmagatzemar-los en un dispositiu d’emmagatzematge, i utilitzar la memòria principal per emmagatzemar les parts que s’executen amb més freqüència.
+
+La idea bàsica de la tècnica de memòria virtual és que els programes es divideixen en fragments de forma semblant a com es fa a la tècnica de segmentació o paginació. Els fragments necessaris per executar el programa s’emmagatzemen a la memòria principal mentre que la resta s’emmagatzema a la memòria secundària de forma semblant a la tècnica de l’_swapping_. Quan el programa necessita una part que es troba a la memòria física, el maquinari realitza l’accés a l’instant i quan el programa necessita una part que no troba a la memòria física, el sistema operatiu busca la part al dispositiu d’emmagatzematge assignat i torna a executar la instrucció.
+
+Els avantatges principals d’aquesta tècnica són la disminució del temps de càrrega dels programes, ja que no han de carregar-se per complet per poder començar a executar-se i l’aprofitament més eficient de l’espai, ja que qualsevol espai lliure pot ser aprofitat per carregar un nou programa i començar a executar-lo.
+
+La dificultat més gran en la gestió de la memòria és no desaprofitar l’espai disponible. Cada programa ha de tenir assignada una quantitat de memòria més gran o igual que la que necessita perquè no es produeixin errors. Això fa que una de les consideracions més importants a l’hora de definir una política d’assignació de memòria sigui aconseguir que resideixen en la memòria principal tants processos com sigui possible, garantint que cada programa tingui l’espai físic que necessita.
+
+#### Gestió de processos
+
+Un dels elements principals dels sistemes operatius són els processos i una de les principals tasques del sistema operatiu consisteix a gestionar els processos i el seu accés al processador. La principal diferència entre un programa i un procés és que un programa és un conjunt d’ordres i un procés és un conjunt d’ordres que s’estan executant. Un procés no només està format pel conjunt d’ordres que s’executen, ja que, perquè el processador pugui treballar amb ell, necessita més informació addicional com els valors dels registres d’operació del processador, les dades d’entrada, etc.
+
+Un **procés** és una seqüència d’accions derivades de l’execució d’una sèrie d’ordres. Això implica que un procés pot requerir l’execució d’un o diversos programes; i que un programa pot formar part de més d’un procés.
+
+Quan s’inicia un sistema operatiu, aquest posa en funcionament els seus processos principals que són els encarregats de crear la resta de processos del sistema operatiu anomenats fills. En un sistema operatiu, trobem una estructura jeràrquica de processos en forma d’arbre on tots els processos excepte els processos inicials tenen un pare i la capacitat de tenir un o més fills.
+
+Per representar un procés, el sistema operatiu utilitza la següent informació:
+
+* **Identificador de procés**. És un nombre enter que serveix per identificar cada procés.
+* **Estat del procés**. Serveix per indicar l’estat del procés en funció del seu cicle de vida.
+* **Ús de recursos**. Permet comptabilitzar l’ús de recursos que utilitza el procés com el temps d’execució, temps màxim assignat, prioritat, quàntum, etc. Aquesta dada és útil pel sistema operatiu per planificar quin serà el pròxim procés que executarà el processador.
+* **Context del procés**. Per cada procés el sistema operatiu emmagatzema l’estat del processador, informació de la memòria i les peticions d’entrada/sortida.
+
+L’emmagatzematge d’aquesta informació dependrà del sistema operatiu. El més comú és trobar una estructura anomenada **bloc de control del procés \(PCB\)** que emmagatzema aquesta informació del procés.
+
+  
+**Estats dels processos:**
+
+Qualsevol procés pot tenir dos o més estats. El model més senzill per representar l’estat d’un procés és el que només té dos estats que són, en execució o finalitzat. Aquest model és molt limitat per satisfer les necessitats d’un sistema operatiu, de forma que podem trobar altres models més pràctics. Per exemple, un model més complet és el que permet al procés trobar-se en qualsevol dels següents 5 estats com podeu observar a la [figura.3](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a1/continguts.html#fig3).FiguraGràfic de transició d’estats![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_003.png)
+
+Aquest model de cinc estats està format pels següents estats:
+
+* **Nou**. Aquest estat es dona quan el procés és creat pel sistema operatiu, però encara no es troba preparat per ser executat. Un procés només pot trobar-se en aquest estat una única vegada durant el seu cicle de vida.
+* **Preparat**. Quan un procés es troba en aquest estat vol dir que està disponible per la seva execució. Es pot arribar a aquest estat després de l’estat _Nou_ o quan es torna a executar després d’un estat _Bloquejat_ o _Execució_.
+* **Execució**. Un procés es troba en aquest estat quan un processador està executant les seves instruccions. La majoria dels sistemes operatius actuals són multiprogramats de forma que cada procés disposa d’una quantitat de temps per executar-se. Quan el temps acaba, però el procés no ha acabat la seva execució, el sistema operatiu guarda la informació necessària i li assigna l’estat _Preparat_.
+* **Bloquejat**. Quan al sistema operatiu es dona un esdeveniment que requereix el processador, el procés que es trobava en execució passa a l’estat _Bloquejat_ mentre espera que acabi l’esdeveniment.
+* **Finalitzat**. Aquest estat es dona quan el procés ha acabat la seva execució i els recursos que necessitava són alliberats. En aquest estat acaba el cicle de vida del procés.
+
+  
+**Polítiques de planificació:**
+
+Un dels objectius del sistema operatiu és utilitzar de forma eficient els seus recursos, executant els processos evitant situacions on el processador es trobi aturat. Per aconseguir-ho cal una política de planificació adequada que permeti seleccionar els processos que han de passar a utilitzar el processador per millorar el rendiment del sistema informàtic.
+
+Les principals polítiques de planificació de processos es poden classificar en dos grans grups:
+
+* **Polítiques no expulsores**. Són aquelles polítiques on un procés només pot abandonar el processador perquè finalitza o perquè passa a l’estat de bloqueig.
+* **Polítiques expulsores**. Són les polítiques que poden forçar al procés que està executant-se al processador a sortir de l’execució per donar pas a un altre procés.
+
+Les polítiques no expulsores més conegudes són les següents:
+
+* **FCFS \(**_**First come, first served**_**\)**. El procés que executa el processador es tria en funció de l’ordre d’arribada a l’estat de preparats. Té l’inconvenient que l’existència de programes molt llargs augmenten el temps de finalització i el temps d’espera de tots els processos.
+* **SJF \(**_**Shortest Job First**_**\)**. El procés que executa el processador primer és el de menor durada. En aquesta política és necessari estimar la duració dels processos i l’èxit de la política depèn de l’encert del model d’estimació de durada.
+* **Prioritats**. En aquest cas, s’assigna una prioritat a cada procés a partir de les quals es decideix l’ordre d’accés al processador. Si la prioritat és la mateixa per diferents processos, s’utilitza la política FCFS. El seu major risc és que els processos de prioritat molt baixa no accedeixin mai al processador per això la majoria dels sistemes operatius ajusten la prioritat de tots els processos de forma dinàmica recalculant-la periòdicament.
+
+Les polítiques expulsores més conegudes són:
+
+* **SRT \(**_**Shortest Remaining Time**_**\)**. En aquesta política s’executa el procés de menor durada com a la política SJF, però si arriba un altre procés amb un temps estimat més curt que el que s’està executat, el treu del processador i n’ocupa el lloc.
+* **RR \(**_**Round-Robin**_**\)**. En aquesta política a cada procés se li assigna un quàntum de temps que determina la quantitat màxima de temps que pot estar executant-se al processador de forma constant. Quan acaba el seu temps, el procés és expulsat del processador per donar pas al següent.
+
+#### Gestió d'entrada/sortida
+
+Una de les funcions del sistema operatiu és gestionar el procés de comunicació amb els dispositius d’entrada/sortida de forma paral·lela a la CPU per millorar el rendiment de l’equip.
+
+Dins d’un sistema informàtic, un dispositiu d’entrada/sortida pot ser un dispositiu d’emmagatzematge secundari, com un disc dur; un dispositiu de comunicació, com una targeta de xarxa o els clàssics dispositius, com el teclat, ratolí i monitor.
+
+Tots i que els dispositius d’entrada/sortida inclouen elements molt diferents entre ells, podem definir unes característiques comunes entre tots els elements que formen el conjunt de dispositius d’entrada/sortida que són:
+
+* **Unitat de transferència**. Alguns dispositius utilitzen els caràcters com unitat de transferència, com el teclat o el ratolí, mentre que altres dispositius transfereixen la informació en blocs, com els discos durs.
+* **Velocitat**. Les velocitats de transferència varien molt entre els diferents dispositius d’entrada/sortida. Per exemple, els dispositius de comunicació poden transferir una quantitat d’informació per segon de forma constant, mentre que el teclat o el ratolí transfereixen una petita quantitat d’informació per segon en períodes de temps concrets.
+* **Comunicació amb la CPU**. Cada dispositiu es comunica amb la CPU utilitzant un protocol diferent que depèn del dispositiu d’entrada/sortida i del bus de comunicació, és a dir, els conductors que connecten els dispositius d’entrada/sortida amb la CPU.
+* **Tipus de dispositiu**. Segons els tipus d’operació que fa el dispositiu d’entrada/sortida, els podem classificar en dispositius d’entrada, de sortida o d’entrada/sortida.
+  * **Dispositius d’entrada**. Els dispositius d’entrada són els que s’utilitzen per introduir dades al sistema informàtic, com per exemple el teclat, ratolí, escàner, tauleta digitalitzadora, càmera web, micròfon, lector codi de barres, pantalla tàctil, etc.
+  * **Dispositius de sortida**. Aquests tipus dispositiu són els que permeten obtenir el resultat d’un treball realitzat pel sistema informàtic. Per exemple el monitor, impressora, altaveus, auriculars, etc.
+  * **Dispositius d’entrada/sortida**: Els dispositius d’entrada/sortida són capaços de realitzar les dues tasques, per exemple, l’encaminador, pantalles tàctils, impressores multifunció, targetes de xarxa, càmeres digitals, etc.
+
+Aquesta diversitat de dispositius d’entrada/sortida fa que el problema de l’intercanvi d’informació entre la CPU i els dispositius sigui bastant complex. Per un costat, s’han d’establir mecanismes que permetin transmetre la informació, tant en bloc com en caràcters, a diferents velocitats i de forma constant o en períodes concrets de temps. També s’han d’establir els mecanismes que gestionin els diferents protocols que permeten establir el camí per l’enviament de dades entre els dispositius i la CPU i els mecanismes de control que determinin si la informació que es transmet és per un dispositiu d’entrada, sortida o dels dos tipus. Per últim, el sistema operatiu també ha de gestionar les ordres que envia als dispositius, captar les interrupcions que rep dels dispositius i gestionar els errors.
+
+Per solucionar part d’aquest problema, els dispositius es connecten al sistema operatiu utilitzant un **controlador**. Cada fabricant de dispositius d’entrada i sortida acostuma a proporcionar un controlador específic per cada sistema operatiu on pugui funcionar el seu dispositiu. Per exemple, podem comprar una impressora que porti controladors per sistemes operatius Windows i GNU/Linux.
+
+Un **controlador de dispositiu** és un programa informàtic que permet al sistema operatiu comunicar-se amb el dispositiu d’entrada/sortida.
+
+El controlador permet que el sistema operatiu ja no hagi de comunicar-se amb una gran varietat de dispositius diferents, ja que només ha de comunicar-se amb el controlador específic del dispositiu. Aquests controladors acostumen a tenir una interfície estandarditzada que facilita el treball al sistema operatiu.
+
+L’operació de comunicació amb el controlador del dispositiu d’entrada/sortida l’acostuma a realitzar el nucli del sistema operatiu. Podeu observar una representació a la [figura.4](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a1/continguts.html#fig4).FiguraConnexió dels dispositius d’entrada/sortida![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_004.png)
+
+Les operacions d’entrada i sortida es poden realitzar de tres formes diferents depenent de com el sistema es comunica amb el controlador:
+
+* **De forma programada**. La forma més simple de comunicació entre el sistema operatiu i el controlador consisteix en el fet que quan una aplicació necessita utilitzar un dispositiu d’entrada/sortida ho demana al sistema operatiu. El nucli del sistema operatiu es comunica amb el controlador necessari. En aquest moment, el controlador inicia l’operació d’entrada o sortida i el sistema operatiu es queda esperant que el dispositiu hagi acabat. Un cop el dispositiu ha acabat l’operació d’entrada o sortida, el controlador avisa al nucli del sistema operatiu que envia la informació a l’aplicació executada. Aquest mecanisme manté la CPU ocupada fins que el dispositiu ha acabat d’enviar o rebre les dades i actualment els sistemes operatius ja no acostumen a utilitzar aquesta tècnica.
+* **Per Interrupcions**. La comunicació per interrupcions consisteix en el fet que quan una aplicació necessita utilitzar un dispositiu d’entrada/sortida ho demana al sistema operatiu, de forma que el nucli del sistema operatiu es comunica amb el controlador demanat. En aquest punt el controlador inicia el dispositiu d’entrada o sortida i li demana que generi una interrupció que avisarà al sistema operatiu quan acabi l’enviament de dades. Una interrupció és un senyal que rep la CPU indicant que ha d’aturar l’execució del treball actual i passar a executar el codi específic per tractar la interrupció rebuda. Aquest mètode permet solucionar el problema de la comunicació de forma programada, ja que la CPU només ha d’esperar l’enviament de la interrupció mentre continua fent altres treballs.
+* **Per adreçament directe de memòria**. Aquest tipus de comunicació permet que els dispositius d’entrada/sortida puguin accedir a la memòria del sistema informàtic sense la intervenció de la CPU. El sistema operatiu configura aquest accés directe a memòria que allibera a la CPU d’atendre una gran quantitat d’interrupcions i permet que pugui fer altres treballs. Per realitzar la funció d’accés directe a memòria, el sistema informàtic disposa d’un controlador específic anomenat DMA \(_Direct Memory Access_\).
+
+Una altra funció que fan els sistemes operatius per gestionar la transferència d’informació amb els dispositius d’entrada/sortida és la de **gestió de cues** o _spool_ \(de l’anglès, _Simultaneous Peripheral Operation On-Line_\). La gestió de cues s’utilitza sobretot amb els dispositius d’entrada/sortida de velocitat de transferència lenta, com impressores o escàners. La gestió de cues es basa a crear un magatzem intermedi, o _buffer_ en anglès, entre l’aplicació que demana la transferència d’informació i el dispositiu d’entrada/sortida. Aquest magatzem s’acostuma a ubicar en un dispositiu d’emmagatzematge, com un disc dur, i el seu objectiu és gestionar les diferents velocitats d’operació entre el sistema operatiu i el dispositiu d’entrada/sortida.
+
+D’aquesta forma, les instruccions de l’aplicació es poden guardar al magatzem a la velocitat més gran possible i deixar lliure la CPU per realitzar altres treballs, mentre que els dispositius d’entrada/sortida més lents poden anar llegint o escrivint al magatzem assignat a la seva velocitat de transferència.
+
+Existeixen diferents tipus de magatzems que es poden classificar en:
+
+* **Magatzem de tipus simple**. No permet més d’una transferència de forma simultània, les transferències d’entrada no es poden fer fins que finalitzen les de sortida i les de sortida s’han de fer quan finalitzen les d’entrada.
+* **Magatzem de tipus doble**. Permet dues transferències simultàniament, per exemple es pot fer una transferència d’informació des del sistema operatiu al magatzem al mateix temps que es fa una transferència d’informació del dispositiu d’entrada/sortida al magatzem.
+* **Magatzem circular**. Aquest tipus de magatzem permet més de dues transferències de forma simultània entre el sistema operatiu i el dispositiu d’entrada/sortida. Per exemple, el teclat utilitza aquest tipus de magatzem per enviar les dades al sistema operatiu.
+

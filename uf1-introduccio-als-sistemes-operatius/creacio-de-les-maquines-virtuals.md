@@ -1,7 +1,5 @@
 # Màquines virtuals i virtualització
 
-
-
 ## Configuració de màquines virtuals
 
 La virtualització s’està convertint en una tecnologia molt popular al sector informàtic, ja que permet executar diversos sistemes operatius i/o aplicacions en un únic equip informàtic. Per fer-ho, és necessari utilitzar un programari específic que ens permeti crear màquines virtuals o contenidors, els quals permeten l’execució de diferents sistemes operatius i/o aplicacions de forma simultània sense la necessitat de crear escenaris d’arrencada dual.
