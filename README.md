@@ -7,3 +7,13 @@ description: >-
 
 # Introducció
 
+Referències.
+
+Sistemes operatius monolloc - ioc.xtec.cat
+
+Apunts personals i de classe.
+
+
+
+
+

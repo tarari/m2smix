@@ -5,8 +5,7 @@
 ## UF1 INTRODUCCIÓ ALS SISTEMES OPERATIUS
 
 * [Fonaments dels sistemes operatius](uf1-introduccio-als-sistemes-operatius/fonaments-dels-sistemes-operatius.md)
-* [Creació de les màquines virtuals](uf1-introduccio-als-sistemes-operatius/creacio-de-les-maquines-virtuals.md)
-* [Màquines virtuals](uf1-introduccio-als-sistemes-operatius/maquines-virtuals.md)
+* [Màquines virtuals i virtualització](uf1-introduccio-als-sistemes-operatius/creacio-de-les-maquines-virtuals.md)
 
 ## UF2 Sistemes operatius propietaris
 
