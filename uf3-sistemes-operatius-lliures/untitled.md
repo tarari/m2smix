@@ -167,7 +167,9 @@ Anomenem _**partició**_ una part del disc dur on emmagatzemem directoris i arxi
 
 Punts de muntatge
 
-Suposem que tenim el sistema d’arxius, basat en GNU/Linux però molt simplificat, que podeu observar a la part esquerra de la [figura.1](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u3/a1/continguts.html#fig01).FiguraPunts de muntatge![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u3/media/punt.jpg)
+Suposem que tenim el sistema d’arxius, basat en GNU/Linux però molt simplificat, que podeu observar a la part esquerra de la [figura.1](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u3/a1/continguts.html#fig01).
+
+![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u3/media/punt.jpg)
 
 Aquest sistema podria estar situat en un sol disc i una sola partició. Per facilitar el manteniment del sistema, si l’equip consta de dos discs durs, l’administrador podria considerar útil situar les dades personals dels usuaris en aquest segon disc dur, per facilitar tasques com la còpia de seguretat o la reinstal·lació del sistema operatiu. A més, si en algun moment algun usuari connecta un dispositiu USB, aquest dispositiu ha d’estar accessible. Els sistemes GNU/Linux situen aquest dispositiu en una carpeta dins del directori /media. A la part dreta de la [figura.1](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u3/a1/continguts.html#fig01) es poden observar en diferents colors els diferents punts de muntatge que es poden crear sota aquest supòsit.
 

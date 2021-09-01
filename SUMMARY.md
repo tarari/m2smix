@@ -15,4 +15,5 @@
 ## UF3 Sistemes operatius lliures
 
 * [Instal·lació](uf3-sistemes-operatius-lliures/untitled.md)
+* [Configuració](uf3-sistemes-operatius-lliures/configuracio.md)
 
