@@ -14,5 +14,5 @@
 
 ## UF3 Sistemes operatius lliures
 
-* [Linux](uf3-sistemes-operatius-lliures/untitled.md)
+* [Instal·lació](uf3-sistemes-operatius-lliures/untitled.md)
 
