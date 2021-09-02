@@ -679,7 +679,9 @@ També, cal tenir en consideració que els sistemes d’arxius mantenen en tot m
 
 #### Gestió de la memòria
 
-Un dels components més important d’un equip informàtic és la memòria. La memòria ha de ser ràpida, amb gran capacitat d’emmagatzematge i econòmica. Actualment, cap tecnologia compleix amb aquests tres objectius simultàniament i per això s’ha adoptat una solució on el sistema de memòria està **construït jeràrquicament per capes**. En aquesta solució les capes superiors tenen major velocitat i cost per bit, però menor capacitat que les capes inferiors, com podeu observar a la [figura.2](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a1/continguts.html#fig2).FiguraJerarquia de memòria![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_002.png)
+Un dels components més important d’un equip informàtic és la memòria. La memòria ha de ser ràpida, amb gran capacitat d’emmagatzematge i econòmica. Actualment, cap tecnologia compleix amb aquests tres objectius simultàniament i per això s’ha adoptat una solució on el sistema de memòria està **construït jeràrquicament per capes**. En aquesta solució les capes superiors tenen major velocitat i cost per bit, però menor capacitat que les capes inferiors, com podeu observar a la figura.
+
+![Jerarquia de mem&#xF2;ria](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_002.png)
 
 La capa superior del sistema de memòria està formada pels **registres** interns de la CPU. Estan fabricats amb el mateix material que la CPU i, per tant, tenen la mateixa velocitat. Cada registre contindrà un conjunt de bits \(4, 8, 16, 32 o 64, depenent del disseny del processador\) que es manipulen en bloc.
 
@@ -693,7 +695,7 @@ Aquesta jerarquia de memòria és la més comuna, però podem trobar algun siste
 
 Perquè un procés es pugui executar s’ha d’emmagatzemar a la memòria primària de l’equip informàtic. Els programes i les dades que no es necessiten de forma immediata s’acostumen a emmagatzemar a la memòria secundària fins que es necessitin i calgui transferir-los a la memòria primària.
 
-El procés de gestió de la memòria d’un sistema operatiu consisteix bàsicament a dur a terme les següents funcions:
+El procés de gestió de la memòria d’un sistema operatiu consisteix bàsicament a **dur a terme les següents funcions**:
 
 * **Execució dels processos del sistema operatiu i de les aplicacions d’usuari**. El sistema operatiu ha d’assignar la memòria necessària a les aplicacions i processos que ho sol·liciten. Un programa, durant la seva execució pot ocupar posicions de memòria consecutives o pot estar ubicat de forma no contigua.
 * **Gestió de la permanència del programa a la memòria**. El sistema operatiu s’ha d’encarregar d’alliberar la part de memòria que ja no s’utilitza perquè estigui disponible per altres aplicacions i processos. Un programa pot emmagatzemar-se i treure de la memòria durant la seva execució o pot romandre a la memòria en tot moment.
