@@ -130,13 +130,13 @@ El programari per a la creació de màquines virtuals, conegut com a **hiperviso
 
 Els hipervisors de tipus 1 més coneguts són Microsoft Hyper-V, Citrix Hypervisor \(XenServer\) i WMware ESXi. Mentre que Oracle VirtualBox, VMware Workstation i Parallels Desktop són exemples d’hipervisors de tipus 2.
 
-Hipervisors de tipus 1:
+#### Hipervisors de tipus 1:
 
 * **Microsoft Hyper-V**. És un programari de virtualització de Microsoft basat en un hipervisor de tipus 1 per sistemes informàtics basats en processadors AMD i Intel. A Windows 10 només trobem aquesta característica a les edicions Pro, Education i Enterprise. Aquest programari és una opció molt interessant pels usuaris de Windows gràcies a la seva integració amb el sistema operatiu.
 * **Citrix Hypervisor \(XenServer\)**. És un programari de virtualització de Citrix Systems, Inc optimitzat per càrregues de treball d’escriptori i aplicacions virtuals basat en l’hipervisor de Xen Project, un hipervisor de codi obert desenvolupat per la Universitat de Cambridge.
 * **WMware ESXi**. És un programari de virtualització produït per WMware Inc, una filial d’EMC Corporation. WMware ESXi és l’hipervisor de les diferents solucions de virtualització empresarial de Wmware Inc.
 
-Hipervisors de tipus 2:
+#### Hipervisors de tipus 2:
 
 * **VMware Workstation**. VMware Workstation Pro és un hipervisor pels sistemes operatius Windows i Linux que permet als usuaris configurar màquines virtuals. Existeix una versió gratuïta anomenada VMware Workstation Player dirigida a l’ús personal.
 * **Parallels Desktop**. És un programari de virtualització de maquinari per equips que funcionen amb sistema operatiu Mac OS X desenvolupat per l’empresa de programari Parallels.
@@ -149,29 +149,39 @@ VirtualBox és una aplicació formada per dos paquets principals:
 * **Paquet bàsic**. Aquest paquet està format per tots els components principals de VirtualBox. És de codi obert i té llicencia _GNU General Public License V2_.
 * **Paquets d’extensió**. Aquests paquets amplien la funcionalitat del paquet base de VirtualBox. VirtualBox proporciona un paquet d’extensió únic disponible a la seva pàgina web. Actualment el paquet d’extensió de VirtualBox ofereix suport per USB 2.0 i 3.0, permet dur a terme el xifratge del disc dur i possibilita l’arrancada per xarxa del sistema informàtic, entre altres opcions.
 
-Per instal·lar VirtualBox cal anar a la pàgina web oficial d’Oracle \([www.oracle.com](https://www.oracle.com/es/index.html)\) i triar la versió de VirtualBox que es correspongui al nostre sistema operatiu i equip informàtic, per exemple per un equip Windows 10 de 64 bits triem l’opció _Windows hosts_ com podeu observa a la [figura.4](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig4).
+Per instal·lar VirtualBox cal anar a la pàgina web oficial d’Oracle \([www.oracle.com](https://www.oracle.com/es/index.html)\) i triar la versió de VirtualBox que es correspongui al nostre sistema operatiu i equip informàtic, per exemple per un equip Windows 10 de 64 bits triem l’opció _Windows hosts_
 
-Llicència GNU GPL
+#### Llicència GNU GPL
 
-La Llicència Pública General GNU és un tipus de llicència per a programari que permet la còpia, distribució \(comercial o no\) i modificació del codi, sempre que qualsevol modificació es continuï distribuint amb la mateixa llicència GPL. La llicència GPL no permet la distribució de programes executables sense el codi font corresponent o una oferta de com obtenir-lo gratuïtament. És la llicència lliure de programari més utilitzada.FiguraInstal·lació de VirtualBox![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/vb1.png)
+La Llicència Pública General GNU és un tipus de llicència per a programari que permet la còpia, distribució \(comercial o no\) i modificació del codi, sempre que qualsevol modificació es continuï distribuint amb la mateixa llicència GPL. La llicència GPL no permet la distribució de programes executables sense el codi font corresponent o una oferta de com obtenir-lo gratuïtament. És la llicència lliure de programari més utilitzada.
 
-Caldrà anar seguint els passos que ens proposa l’assistent d’instal·lació, el primer pas de l’assistent ens informa que es procedirà a instal·lar VirtualBox al nostre sistema operatiu, el segon pas ens demana que seleccionem les característiques que volen instal·lar, per defecte deixem seleccionades les característiques bàsiques predeterminades i continuem avançant clicant el botó _Següent_, podeu observar aquests dos primers passos a la [figura.5](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig5) i [figura.6](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig6).FiguraAssistent d’instal·lació de VirtualBox \(I\)![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/vb2.png)FiguraAssistent d’instal·lació de VirtualBox \(II\)![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/vb3.png)
+Caldrà anar seguint els passos que ens proposa l’assistent d’instal·lació, el primer pas de l’assistent ens informa que es procedirà a instal·lar VirtualBox al nostre sistema operatiu, el segon pas ens demana que seleccionem les característiques que volen instal·lar, per defecte deixem seleccionades les característiques bàsiques predeterminades i continuem avançant clicant el botó _Següent_, podeu observar aquests dos primers passos a les figures
 
-Al tercer pas de l’assistent d’instal·lació podem triar crear les icones i accessos directes que ens puguin ser útils, ho podeu observar a la [figura.7](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig7).FiguraAssistent d’instal·lació de VirtualBox \(III\)![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/vb4.png)
+.
 
-Durant la instal·lació ens demanarà confirmació per instal·lar diferents controladors pels dispositius virtuals, a la [figura.8](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig8) i [figura.9](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig9) podeu observar com VirtualBox necessita reiniciar la connexió de xarxa de forma temporal i com sol·licita autorització per instal·lar un nou controlador, respectivament.FiguraAssistent d’instal·lació de VirtualBox \(IV\)![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/vb5.png)FiguraAssistent d’instal·lació de VirtualBox \(V\)![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/vb7.png)
+![Assistent d&#x2019;instal&#xB7;laci&#xF3; ](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/vb2.png)
 
-Després d’instal·lar els arxius necessaris, l’assistent ens mostrarà una finestra on ens informa que la instal·lació està completa. Podeu observar aquesta finestra a la [figura.10](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig10).FiguraAssistent d’instal·lació de VirtualBox \(VI\)![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/vb8.png)
+
+
+Durant la instal·lació ens demanarà confirmació per instal·lar diferents controladors pels dispositius virtuals, podeu observar com VirtualBox necessita reiniciar la connexió de xarxa de forma temporal i com sol·licita autorització per instal·lar un nou controlador, respectivament.
+
+![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/vb5.png)
+
+Després d’instal·lar els arxius necessaris, l’assistent ens mostrarà una finestra on ens informa que la instal·lació està completa.
+
+
 
 **Especificitats de la instal·lació de VirtualBox en Ubuntu**
 
-Per instal·lar VirtualBox a Ubuntu existeixen dues possibilitats. La primera és fer servir el programari disponible a la web de VirtualBox que Oracle, la companyia que desenvolupa l’hipervisor, posa a disposició dels internautes en la pàgina de descàrregues. En aquesta pàgina hi ha disponibles versions per les diferents distribucions de GNU/Linux, incloent-hi Ubuntu. En aquest cas cal descarregar el fitxer .deb i instal·lar-lo amb el gestor de paquets gràfic.
+Per instal·lar VirtualBox a Ubuntu/Debian  existeixen dues possibilitats. La primera és fer servir el programari disponible a la web de VirtualBox que Oracle, la companyia que desenvolupa l’hipervisor, posa a disposició dels internautes en la pàgina de descàrregues. En aquesta pàgina hi ha disponibles versions per les diferents distribucions de GNU/Linux, incloent-hi Ubuntu. En aquest cas cal descarregar el fitxer **.deb** i instal·lar-lo amb el gestor de paquets gràfic.
 
-La segona possibilitat és fer servir el centre de programari d’Ubuntu anomenat Ubuntu Software. Aquest centre de programari, similar a la botiga d’aplicacions dels dispositius mòbils Android, o a la botiga d’aplicacions de Microsoft Windows, disposa de diferents programes que han estat testejats per funcionar amb el Sistema Operatiu. Al quadre de cerca simplement cal buscar VirtualBox i ens permetrà la instal·lació de l’aplicatiu fent clic al botó “Instal·lar”.
+La segona possibilitat és fer servir el centre de programari d’Ubuntu/Debian. Aquest centre de programari, similar a la botiga d’aplicacions dels dispositius mòbils Android, o a la botiga d’aplicacions de Microsoft Windows, disposa de diferents programes que han estat testejats per funcionar amb el Sistema Operatiu. Al quadre de cerca simplement cal buscar VirtualBox i ens permetrà la instal·lació de l’aplicatiu fent clic al botó “Instal·lar”.
 
 **Configuració de VirtualBox**
 
-Per accedir a la finestra de configuració global de VirtualBox cal seleccionar _Fitxer &gt; Preferències_. En aquesta finestra, que podeu observar a la [figura.11](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig11), trobem la configuració global de VirtualBox que s’aplica a totes les màquines virtuals de l’usuari actual. Al cas de la secció _Extensions_, les noves funcionalitats que instal·lem amb els paquets d’extensió s’aplicaran tant a les màquines virtuals com a l’aplicació.FiguraConfiguració global de VirtualBox![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/general.png)
+Per accedir a la finestra de configuració global de VirtualBox cal seleccionar _Fitxer &gt; Preferències_. En aquesta finestra, que podeu observar a la figura, trobem la configuració global de VirtualBox que s’aplica a totes les màquines virtuals de l’usuari actual. Al cas de la secció _**Extensions**_, les noves funcionalitats que instal·lem amb els paquets d’extensió s’aplicaran tant a les màquines virtuals com a l’aplicació.FiguraConfiguració global de VirtualBox
+
+![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/general.png)
 
 En aquesta finestra trobem disponibles les següents seccions:
 
@@ -181,18 +191,20 @@ En aquesta finestra trobem disponibles les següents seccions:
 * **Llengua**. Permet a l’usuari triar l’idioma desitjat per treballar amb la interfície gràfica de VirtualBox.
 * **Pantalla**. Permet a l’usuari poder especificar la resolució \(amplada i alçada\) del monitor. Permet establir un factor d’escala predeterminat per tots els monitors dels sistemes operatius convidats i augmentar les finestres de les màquines virtuals quan el punter ratolí passi per sobre.
 * **Xarxa**. Permet configurar els detalls de les xarxes NAT, com el nom, l’adreça ip, la màscara de la xarxa i el reenviament de ports entre altres opcions. A la dreta del quadre xarxes NAT trobem les opcions per crear, modificar o eliminar xarxes NAT.
-* **Extensions**. Permet administrar i comprovar els paquets d’extensió instal·lats. Per instal·lar el paquet d’extensió cal descarregar-lo de la pàgina web oficial i clicar a la icona anomenada _Afegeix un paquet nou_. En aquesta mateixa finestra podem tant afegir com eliminar paquets d’extensió com podeu observar a la [figura.12](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig12).
+* **Extensions**. Permet administrar i comprovar els paquets d’extensió instal·lats. Per instal·lar el paquet d’extensió cal descarregar-lo de la pàgina web oficial i clicar a la icona anomenada _Afegeix un paquet nou_. En aquesta mateixa finestra podem tant afegir com eliminar paquets d’extensió com podeu observar a la figura.
 * **Servidor intermediari**. Permet configurar un servidor proxy HTTP que farà d’intermediari entre les connexions del client i un servidor de destí.
 
-FiguraAdministració d’extensions de VirtualBox![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/extension.png)
+![Administraci&#xF3; d&#x2019;extensions de VirtualBox](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/extension.png)
 
 #### Creació de màquines virtuals
 
 Un cop instal·lat el programari per a la creació de màquines virtuals i les extensions recomanades ja podem començar a crear les màquines virtuals. Per accedir al programari de creació de màquines virtuals, buscarem el programari al menú de programes o aplicacions en funció del sistema operatiu instal·lat al maquinari amfitrió.
 
-Quan iniciem VirtualBox per primer cop veurem la finestra que podeu observar a la [figura.13](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig13).
+Quan iniciem VirtualBox per primer cop veurem la finestra que podeu observar a la figura.
 
-Aquesta finestra es coneix com a finestra de gestió VirtualBox. Al tauler de l’esquerra trobem la llista amb totes les màquines virtuals que tenim creades, si encara no hem creat cap màquina virtual, aquesta llista estarà buida. El tauler de la dreta mostra les propietats de la màquina virtual seleccionada al tauler esquerre, mentre no tinguem màquines virtuals creades, aquest tauler mostrarà un missatge de benvinguda.FiguraFinestra de gestió de VirtualBox![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/benvinguda.png)
+Aquesta finestra es coneix com a finestra de gestió VirtualBox. Al tauler de l’esquerra trobem la llista amb totes les màquines virtuals que tenim creades, si encara no hem creat cap màquina virtual, aquesta llista estarà buida. El tauler de la dreta mostra les propietats de la màquina virtual seleccionada al tauler esquerre, mentre no tinguem màquines virtuals creades, aquest tauler mostrarà un missatge de benvinguda.
+
+![Finestra de gesti&#xF3; de VirtualBox](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/benvinguda.png)
 
 Per crear una nova màquina virtual, accedim a aquesta finestra de gestió i seleccionem l’opció _Nova_ per accedir a l’assistent de creació de màquina virtual. Durant totes les finestres que ens mostrarà aquest assistent introduirem les dades que necessitarà el programari per crear la màquina virtual.
 
