@@ -14,7 +14,7 @@ L’aplicació de la virtualització a les empreses ha reduït la dependència d
 
 Actualment, donada la gran evolució del maquinari pel que fa a la seva capacitat de procés, utilitzar un sistema informàtic complet per executar un únic sistema operatiu i algunes poques aplicacions o serveis de forma simultània de ben segur suposa la infrautilització d’aquests equips; és a dir, s’està **malbaratant capacitat de procés**. Aquest problema es fa més evident quan es tracta de servidors, com pot ser un servidor web o un servidor de bases de dades, on les càrregues de treball són puntuals. Com solucionar aquesta infrautilització? La idea és crear sistemes virtuals, els quals contenen el sistema operatiu i les aplicacions o serveis necessaris per donar resposta a una necessitat, i que es poden moure entre diferents sistemes físics en el moment en què sigui necessari per maximitzar la utilització d’aquests sistemes.
 
-Exemple pràctic de virtualització
+### Exemple pràctic de virtualització
 
 Podem imaginar que una empresa té tres servidors físics individuals, cadascun amb el seu propi propòsit. Cada servidor utilitza només el 20% dels seus recursos, és a dir, una petita part del seu potencial. La virtualització permet utilitzar un únic servidor per realitzar les tasques que tenien assignades els tres servidors físics de forma que aquest únic servidor consumirà el 60% dels seus recursos.
 
@@ -66,9 +66,11 @@ En aquests tipus d’hipervisor podem executar màquines virtuals que s’execut
 
 Per aquests avantatges i inconvenients, aquest tipus de virtualització està més orientada a **entorns de prova, docència o domèstics**.
 
-A la [figura.1](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig1) podeu observar la diferència entre els hipervisors de tipus 1 i tipus 2.FiguraHipervisors de tipus 1 i 2![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_007_n.png)
+A la  figura podeu observar la diferència entre els hipervisors de tipus 1 i tipus 2
 
-**Contenidors**
+![Hipervisors](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_007_n.png)
+
+**Contenidors - containers**
 
 Tant els hipervisors de tipus 1 com els de tipus 2 ofereixen a les màquines hostes un maquinari sobre el qual instal·lar els sistemes operatius convidats. És per això que podem veure aquest tipus de virtualització com una virtualització basada en maquinari.
 
@@ -76,7 +78,9 @@ En un possible escenari, amb una màquina amfitriona que pot contenir desenes o 
 
 Amb la virtualització basada en contenidors, no tenim un sistema operatiu completament instal·lat executant-se en cada màquina virtual sinó que únicament hi ha un únic sistema operatiu complet al sistema informàtic gestionant tot el maquinari i tan sols s’ofereixen les parts necessàries del sistema amfitrió per permetre una execució aïllada i segura de les diferents aplicacions. Tots aquests contenidors comparteixen el nucli del sistema operatiu així com les aplicacions del sistema i les llibreries necessàries per executar programes. Cal tenir en compte que en aquest tipus de virtualització, els components compartits entre els diferents contenidors són únicament de lectura.
 
-A la [figura.2](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig2) podeu observar la diferència entre la virtualització amb hipervisor i la virtualització basada en contenidors.FiguraHipervisors de tipus 1, tipus 2 i contenidors![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_005.png)
+A la figura podeu observar la diferència entre la virtualització amb hipervisor i la virtualització basada en contenidors.
+
+![Hipervisors vs contenidors](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_005.png)
 
 Màquines virtuals de sistema vs. màquines virtuals de procés
 
