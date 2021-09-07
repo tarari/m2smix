@@ -106,7 +106,11 @@ Els sistemes informàtics són màquines que processen automàticament la inform
 
 A cadascun d’aquests símbols se’ls anomena **xifra binària o bit**. Un bit és la unitat més petita de representació d’informació en un sistema informàtic.
 
+{% hint style="info" %}
 El **bit** és la unitat base de mesura de la informació, que indica la quantitat mínima que forma la informació. Es pot representar mitjançant dos símbols, 0 o 1.
+{% endhint %}
+
+
 
 La **informació** és la forma de representar fets, objectes, valors o idees que permet la comunicació entre persones i l’adquisició del coneixement de les coses. Tota la informació està formada per dades. Les **dades** són tots els fets o objectes que no han estat manipulats i un cop processats formen la informació. Podeu observar un esquema del processament de les dades en informació a la [figura.1](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a1/continguts.html#fig1).FiguraProcessament de les dades
 
