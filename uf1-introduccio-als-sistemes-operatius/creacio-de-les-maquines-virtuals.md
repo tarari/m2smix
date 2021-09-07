@@ -323,7 +323,7 @@ A la secció _General_ podem trobar les següents opcions de configuració a les
 
 **Configuració del sistema**
 
-A la finestra _Paràmetres_, a la secció _Sistema_ podem configurar els paràmetres de maquinari de la màquina virtual, com la memòria i el processador. Les opcions que trobem estan organitzades en les pestanyes _Placa mare_, _Processador_ i _Acceleració_. Podeu observar les pestanyes _Placa mare_ i _Processador_ a la [figura.21](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig21) i [figura.22](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig22), respectivament.
+A la finestra _Paràmetres_, a la secció _Sistema_ podem configurar els paràmetres de maquinari de la màquina virtual, com la memòria i el processador. Les opcions que trobem estan organitzades en les pestanyes _Placa mare_, _Processador_ i _Acceleració_. 
 
 Les opcions que trobem en aquesta finestra són:
 
