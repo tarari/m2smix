@@ -1,3 +1,9 @@
+---
+description: >-
+  Reconèixer les característiques dels sistemes operatius, i descriure els tipus
+  i aplicacions.
+---
+
 # Fonaments dels sistemes operatius
 
 ##  Sistemes operatius, tipus i aplicacions
@@ -57,7 +63,7 @@ El programari o _software_, en anglès, és una part imprescindible d’un siste
 
 El **programari** d’un sistema informàtic és el conjunt de components lògics necessaris que fan possible la realització de tasques específiques.
 
-Generalment, el programari es pot classificar en dos grans grups:
+Generalment, el programari es pot classificar en dos grans grups: **bàsic o sistema i d'aplicació.**
 
 * El **programari base o de sistema**. Aquest tipus de programari és bàsic pel sistema, ja que permet comunicar als usuaris i a la majoria del programari amb el maquinari. Sense aquest tipus de programari el sistema informàtic no podria funcionar. Com a exemple d’aquest tipus de programari trobem el sistema operatiu o els controladors dels dispositius perifèrics.
 * El **programari d’aplicació**. En aquest cas són els programes o aplicacions encarregats de realitzar tasques específiques. Com a exemple d’aquest tipus de programari trobem els paquets ofimàtics, els videojocs o els antivirus.
@@ -71,9 +77,13 @@ Existeix un tipus de programari especial, anomenat **microprogramari** o _firmwa
 
 La **BIOS** \(_Basic Input Output System_\) o **UEFI** \(_Unified Extensible Firmware Interface_\) són un dels microprogramaris més coneguts que, entre altres funcions, s’encarreguen d’iniciar i comprovar el maquinari del sistema durant el procés d’arrancada del sistema operatiu, també monitoren la temperatura de l’equip i gestionen les funcions d’energia. Altres microprogramaris també els podem trobar integrats als telèfons mòbils, tauletes o dispositius Bluetooth.
 
-Aquest microprogramari acostuma a estar emmagatzemats en xips de memòria de tipus ROM, EPROM o EEPROM que tot i que es poden modificar, és poc freqüent fer-ho i, per tant, un cop s’introdueix el microprogramari en un component de maquinari es fan poques o cap actualitzacions del mateix.
+![Proc&#xE9;s d&apos;arrencada UEFI - Wikimedia Commons](../.gitbook/assets/uefi_boot_process.png)
+
+Aquest microprogramari acostuma a estar emmagatzemats en xips de memòria de tipus **ROM**, **EPROM** o **EEPROM** que tot i que es poden modificar, és poc freqüent fer-ho i, per tant, un cop s’introdueix el microprogramari en un component de maquinari es fan poques o cap actualitzacions del mateix.
 
 Memòries ROM, EPROM i EEPROM
+
+_**Read Only Memory**_
 
 Les memòries de tipus lectura, conegudes com a ROM, permeten la lectura de la informació i en algunes de les seves variants, com la EPROM o EEPROM, permeten l’eliminació de les dades amb llum ultraviolada o corrent elèctric.
 
@@ -112,19 +122,21 @@ El **bit** és la unitat base de mesura de la informació, que indica la quantit
 
 
 
-La **informació** és la forma de representar fets, objectes, valors o idees que permet la comunicació entre persones i l’adquisició del coneixement de les coses. Tota la informació està formada per dades. Les **dades** són tots els fets o objectes que no han estat manipulats i un cop processats formen la informació. Podeu observar un esquema del processament de les dades en informació a la [figura.1](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a1/continguts.html#fig1).FiguraProcessament de les dades
+La **informació** és la forma de representar fets, objectes, valors o idees que permet la comunicació entre persones i l’adquisició del coneixement de les coses. Tota la informació està formada per dades. Les **dades** són tots els fets o objectes que no han estat manipulats i un cop processats formen la informació. Podeu observar un esquema del processament de les dades en informació a la figura. 
 
 ![Processament de les dades](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_001.png)
 
-Podem classificar les dades ``segons els següents tipus:
+Podem classificar les dades segons els següents tipus:
 
 * **Numèriques**. Aquestes dades estan únicament formades per nombres \(0, 1, …, 9\). Amb aquestes dades es poden fer tota mena d’operacions matemàtiques.
 * **Alfabètiques**. Són les dades que estan formades per les lletres de l’alfabet \(A, B, …, Z\).
 * **Alfanumèriques**. Són les dades que estan formades per una combinació de lletres i números. Amb aquest tipus de dades, encara que només estiguin formades per nombres no es poden fer operacions matemàtiques.
 
-Perquè aquesta informació pugui ser entesa pel sistema informàtic, cal establir una correspondència entre les dades i aquests dos estats elèctrics. Aquesta correspondència és coneguda com a **codificació de la informació**. Totes les dades que utilitzen els sistemes informàtics estan codificades. Diferents sistemes informàtics poden utilitzar codis diferents, fins i tot, un mateix sistema informàtic pot utilitzar diferents codificacions als diferents dispositius electrònics que el formen.
+Perquè aquesta informació pugui ser entesa pel sistema informàtic, cal establir una correspondència entre les dades i aquests dos estats elèctrics. Aquesta correspondència és coneguda com a **codificació de la informació**. 
 
-Un **codi** és la forma d’interpretar la informació. Per exemple, el símbol X, fent servir el codi alfabètic, és una lletra, però, si apliquem el codi del sistema de numeració romà, és el número 10.
+Totes les dades que utilitzen els sistemes informàtics estan codificades. Diferents sistemes informàtics poden utilitzar codis diferents, fins i tot, un mateix sistema informàtic pot utilitzar diferents codificacions als diferents dispositius electrònics que el formen.
+
+Un **codi** és la forma d’interpretar la informació. Per exemple, el símbol **X**, fent servir el codi alfabètic, és una lletra, però, si apliquem el codi del sistema de numeració romà, és el número 10.
 
 La codificació també depèn de l’ús que es farà de les dades. Per aquest motiu s’acostumen a utilitzar codis normalitzats, com l’Unicode per l’entrada i sortida de dades alfabètiques o alfanumèriques, mentre que per les dades numèriques s’utilitzen codificacions basades en el sistema de numeració binari, octal o hexadecimal per la facilitat que ofereixen per ser transformats en decimal o binari i fer operacions matemàtiques.
 
