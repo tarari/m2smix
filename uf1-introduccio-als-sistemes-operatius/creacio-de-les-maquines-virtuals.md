@@ -132,9 +132,13 @@ Als contenidors els principals inconvenients són:
 
 ### Programari per a la creació de màquines virtuals
 
-El programari per a la creació de màquines virtuals, conegut com a **hipervisor**, permet executar diferents sistemes operatius en un mateix equip informàtic. Per exemple, podem executar Linux al nostre Windows o executar Windows en un equip Mac juntament amb totes les seves aplicacions existents. A la [figura.3](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a2/continguts.html#fig3) podem observar l’execució d’un sistema Windows a un equip amb sistema operatiu Linux.FiguraExecució de Windows 10 en un sistema operatiu Ubuntu![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/escriptori.png)
+El programari per a la creació de màquines virtuals, conegut com a **hipervisor**, permet executar diferents sistemes operatius en un mateix equip informàtic. Per exemple, podem executar Linux al nostre Windows o executar Windows en un equip Mac juntament amb totes les seves aplicacions existents. A la figura podem observar l’execució d’un sistema Windows a un equip amb sistema operatiu Linux. 
 
-Els hipervisors de tipus 1 més coneguts són Microsoft Hyper-V, Citrix Hypervisor \(XenServer\) i WMware ESXi. Mentre que Oracle VirtualBox, VMware Workstation i Parallels Desktop són exemples d’hipervisors de tipus 2.
+![Execuci&#xF3; de Windows 10 en un sistema operatiu Ubuntu](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/escriptori.png)
+
+Els hipervisors de tipus 1 més coneguts són Microsoft Hyper-V, Citrix Hypervisor \(XenServer\) i WMware ESXi. 
+
+Mentre que Oracle VirtualBox, VMware Workstation i Parallels Desktop són exemples d’hipervisors de tipus 2.
 
 #### Hipervisors de tipus 1:
 
