@@ -1,3 +1,9 @@
+---
+description: >-
+  Crear  màquines virtuals identificar-ne el camp d’aplicació i instal·lar-hi
+  programari específic.
+---
+
 # Màquines virtuals i virtualització
 
 ## Configuració de màquines virtuals
