@@ -795,7 +795,9 @@ L’emmagatzematge d’aquesta informació dependrà del sistema operatiu. El m�
   
 **Estats dels processos:**
 
-Qualsevol procés pot tenir dos o més estats. El model més senzill per representar l’estat d’un procés és el que només té dos estats que són, en execució o finalitzat. Aquest model és molt limitat per satisfer les necessitats d’un sistema operatiu, de forma que podem trobar altres models més pràctics. Per exemple, un model més complet és el que permet al procés trobar-se en qualsevol dels següents 5 estats com podeu observar a la [figura.3](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a1/continguts.html#fig3).FiguraGràfic de transició d’estats![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_003.png)
+Qualsevol procés pot tenir dos o més estats. El model més senzill per representar l’estat d’un procés és el que només té dos estats que són, en execució o finalitzat. Aquest model és molt limitat per satisfer les necessitats d’un sistema operatiu, de forma que podem trobar altres models més pràctics. Per exemple, un model més complet és el que permet al procés trobar-se en qualsevol dels següents 5 estats com podeu observar a la figura
+
+![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_003.png)
 
 Aquest model de cinc estats està format pels següents estats:
 
@@ -815,15 +817,15 @@ Les principals polítiques de planificació de processos es poden classificar en
 * **Polítiques no expulsores**. Són aquelles polítiques on un procés només pot abandonar el processador perquè finalitza o perquè passa a l’estat de bloqueig.
 * **Polítiques expulsores**. Són les polítiques que poden forçar al procés que està executant-se al processador a sortir de l’execució per donar pas a un altre procés.
 
-Les polítiques no expulsores més conegudes són les següents:
+Les polítiques **no expulsores** més conegudes són les següents:
 
-* **FCFS \(**_**First come, first served**_**\)**. El procés que executa el processador es tria en funció de l’ordre d’arribada a l’estat de preparats. Té l’inconvenient que l’existència de programes molt llargs augmenten el temps de finalització i el temps d’espera de tots els processos.
-* **SJF \(**_**Shortest Job First**_**\)**. El procés que executa el processador primer és el de menor durada. En aquesta política és necessari estimar la duració dels processos i l’èxit de la política depèn de l’encert del model d’estimació de durada.
+* **FCFS \(**_**First come, first served**_**\) or FIFO**. El procés que executa el processador es tria en funció de l’**ordre d’arribada** a l’estat de preparats. Té l’inconvenient que l’existència de programes molt llargs augmenten el temps de finalització i el temps d’espera de tots els processos.
+* **SJF \(**_**Shortest Job First**_**\)**. El procés que executa el processador primer és **el de menor durada**. En aquesta política és necessari estimar la duració dels processos i l’èxit de la política depèn de l’encert del model d’estimació de durada.
 * **Prioritats**. En aquest cas, s’assigna una prioritat a cada procés a partir de les quals es decideix l’ordre d’accés al processador. Si la prioritat és la mateixa per diferents processos, s’utilitza la política FCFS. El seu major risc és que els processos de prioritat molt baixa no accedeixin mai al processador per això la majoria dels sistemes operatius ajusten la prioritat de tots els processos de forma dinàmica recalculant-la periòdicament.
 
 Les polítiques expulsores més conegudes són:
 
-* **SRT \(**_**Shortest Remaining Time**_**\)**. En aquesta política s’executa el procés de menor durada com a la política SJF, però si arriba un altre procés amb un temps estimat més curt que el que s’està executat, el treu del processador i n’ocupa el lloc.
+* **SRT \(**_**Shortest Remaining Time**_**\) o SRTF** . En aquesta política s’executa el procés de menor durada com a la política SJF, però si arriba un altre procés amb un temps estimat més curt que el que s’està executat, el treu del processador i n’ocupa el lloc.
 * **RR \(**_**Round-Robin**_**\)**. En aquesta política a cada procés se li assigna un quàntum de temps que determina la quantitat màxima de temps que pot estar executant-se al processador de forma constant. Quan acaba el seu temps, el procés és expulsat del processador per donar pas al següent.
 
 #### Gestió d'entrada/sortida
@@ -850,7 +852,9 @@ Un **controlador de dispositiu** és un programa informàtic que permet al siste
 
 El controlador permet que el sistema operatiu ja no hagi de comunicar-se amb una gran varietat de dispositius diferents, ja que només ha de comunicar-se amb el controlador específic del dispositiu. Aquests controladors acostumen a tenir una interfície estandarditzada que facilita el treball al sistema operatiu.
 
-L’operació de comunicació amb el controlador del dispositiu d’entrada/sortida l’acostuma a realitzar el nucli del sistema operatiu. Podeu observar una representació a la [figura.4](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/a1/continguts.html#fig4).FiguraConnexió dels dispositius d’entrada/sortida![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_004.png)
+L’operació de comunicació amb el controlador del dispositiu d’entrada/sortida l’acostuma a realitzar el nucli del sistema operatiu. Podeu observar una representació a la figura.
+
+![](https://ioc.xtec.cat/materials/FP/Recursos/fp_smx_m02_/web/fp_smx_m02_htmlindex/WebContent/u1/media/smx_m02_u1_004.png)
 
 Les operacions d’entrada i sortida es poden realitzar de tres formes diferents depenent de com el sistema es comunica amb el controlador:
 
